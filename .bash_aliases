@@ -109,3 +109,6 @@ alias ..='cd ..'
 alias l.='ls -d .*'
 alias tree="tree -C"
 alias df="df -Th"
+
+# Environment variables
+export VAGRANT_HOME=/media/boutros/verbatim128/.vagrant.d
