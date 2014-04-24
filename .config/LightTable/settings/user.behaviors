@@ -19,7 +19,8 @@
      ;; The editor tag is applied to all editors
      :editor [:lt.objs.editor/no-wrap
               (:lt.objs.style/set-theme "default")
-              :lt.objs.editor/line-numbers]
+              :lt.objs.editor/line-numbers
+              (:lt.objs.style/font-settings "" 12)]
 
      ;; Here we can add behaviors to just clojure editors
      :editor.clojure [(:lt.plugins.clojure/print-length 1000)]}
