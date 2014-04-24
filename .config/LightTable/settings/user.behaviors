@@ -13,7 +13,8 @@
      ;; The app tag is kind of like global scope. You assign behaviors that affect
      ;; all of Light Table here
      :app [(:lt.objs.style/set-skin "dark")
-           :lt.objs.sidebar.workspace/workspace.open-on-start]
+           :lt.objs.sidebar.workspace/workspace.open-on-start
+           (:lt.objs.files/file.ignore-pattern "\\.class$|target/|svn|cvs|\\.git|\\.pyc|~|\\.swp|\\.jar|.DS_Store|\\.nrepl-port")]
 
      ;; The editor tag is applied to all editors
      :editor [:lt.objs.editor/no-wrap
