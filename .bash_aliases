@@ -85,7 +85,7 @@ function branch {
 	# First check if we are inside a git repo
 	$(git rev-parse --is-inside-work-tree &>/dev/null) || return
 
-    st=$(git diff --quiet --ignore-submodules HEAD &>/dev/null)
+    st=$(git status 2>/dev/null | tail -n 1)
     if [[ $st != "nothing to commit, working directory clean" ]]
     then
         echo "$(__git_ps1 %s)*"
