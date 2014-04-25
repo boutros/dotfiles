@@ -22,6 +22,9 @@
               :lt.objs.editor/line-numbers
               (:lt.objs.style/font-settings "" 12)]
 
+     :editor.go [:lt.plugins.go/fmt-on-save
+                 (:lt.objs.editor/tab-settings true 4 4)]
+
      ;; Here we can add behaviors to just clojure editors
      :editor.clojure [(:lt.plugins.clojure/print-length 1000)]}
 
