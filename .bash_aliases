@@ -110,5 +110,10 @@ alias l.='ls -d .*'
 alias tree="tree -C"
 alias df="df -Th"
 
-# Environment variables
+# Vagrant VMs on external drive
 export VAGRANT_HOME=/media/boutros/verbatim128/.vagrant.d
+
+# Golang setup
+export GOPATH=$HOME/Proj/go
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$GOPATH/bin
