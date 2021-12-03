@@ -1,0 +1,27 @@
+# Spawn terminal
+super + Return
+	urxvt
+
+# Make sxhkd reload its config
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# dmenu
+super + p
+	dmenu_run
+
+# quit/restart bspwm
+shift + super + {q, r}
+	bspc {quit,wm -r}
+
+# Close window
+super + c
+	bspc node -c
+
+# Send window to the given desktop
+super + shift + {1-9}
+	bspc node -d '^{1-9}'
+
+# Select desktop
+super + {1-9,0}
+	bspc desktop -f {I,II,III,IV,V,VI,VII,VIII,IX,X}

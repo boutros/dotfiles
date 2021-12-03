@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+trap 'rm -rf "$temp"' EXIT
+temp="$(mktemp -d)"
+date
+set -x
+cd "$temp"
+"${SHELL:-bash}"

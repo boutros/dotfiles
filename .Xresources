@@ -1,0 +1,67 @@
+Xft.dpi: 212
+!Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+
+URxvt*loginShell      : true
+URxvt*scrollBar       : false
+URxvt*scrollBar_right : false
+URxvt*transparent     : false
+URxvt*cursorBlink     : true
+
+! Font
+URxvt*font            : xft:Inconsolata:size=12
+
+! light
+URxvt.foreground:   #424242
+URxvt.background:   #ffffec
+
+! dark
+!URxvt.foreground:   #ffffec
+!URxvt.background:   #1a1a1a
+
+
+! black
+URxvt.color0:       #424242
+URxvt.color8:       #eeeea7
+
+! red
+URxvt.color1:       #b8261e
+URxvt.color9:       #f2acaa
+
+! green
+URxvt.color2:       #2e7620
+URxvt.color10:      #88be7f
+
+! yellow
+URxvt.color11:       #7f8f29
+URxvt.color3:      #b6b79c
+
+! blue
+URxvt.color12:       #1a7db5
+URxvt.color4:      #96cce8
+
+! magenta
+URxvt.color13:       #8888c7
+URxvt.color5:      #d0d1f7
+
+! cyan
+URxvt.color14:       #6aa7a8
+URxvt.color6:      #b0eced
+
+! white
+URxvt.color15:       #999957
+URxvt.color7:      #ffffec
+
+! keybindings
+! light
+URxvt*keysym.Control-Shift-F11: command:\033]10;#424242\007\033]11;#ffffec\007\033]708;#ffffec\007
+! dark
+URxvt*keysym.Control-Shift-F12: command:\033]10;#ffffec\007\033]11;#1a1a1a\007\033]708;#1a1a1a\007
+
+! Restore Ctrl+Shift+(c|v)
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.iso14755: false
+URxvt.iso14755_52: false
