@@ -26,7 +26,9 @@ function install_apt {
 		fonts-inconsolata \
 		hsetroot \
 		nnn \
-		python3-pip
+		python3-pip \
+		tig \
+		curl
 	
 }
 

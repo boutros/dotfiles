@@ -69,6 +69,7 @@ fi
 export EDITOR=micro
 export VISUAL=micro
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:~/go/bin
 export PATH=$PATH:~/scripts
 
 # Prompt generated from https://dystroy.org/prompter
