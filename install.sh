@@ -1,6 +1,8 @@
 #!/usr/bin/bash
 
-# The install script is tested on a fresh install of Lubuntu 20.04 LTS 
+# The install script is tested on a fresh install of Lubuntu 20.04 LTS .
+
+# Goal: Running the script repeatedly should not mess up.
 
 function install_apt {
 	# Uninstall unwanted packages
@@ -28,7 +30,8 @@ function install_apt {
 		nnn \
 		python3-pip \
 		tig \
-		curl
+		curl \
+		fzf
 	
 }
 
@@ -60,6 +63,7 @@ function setup_keyboard {
 			
 }
 
+# uncomment from below:
 #install_apt
 #install_manual
 #setup_keyboard
