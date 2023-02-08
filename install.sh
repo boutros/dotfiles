@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-# The install script is tested on a fresh install of Lubuntu 20.04 LTS .
+# The install script is tested on a fresh install of Debian 11.
 
 # Goal: Running the script repeatedly should not mess up.
 
@@ -17,7 +17,7 @@ function install_apt {
 		2048-qt \
 		noblenote
 
-	apt-get autoremove	
+	apt-get autoremove
 
 	# Install wanted packages
 	apt-get install \
@@ -31,15 +31,16 @@ function install_apt {
 		python3-pip \
 		tig \
 		curl \
+		dmenu \
 		fzf
-	
+
 }
 
 function install_manual {
 	# Install micro editor
 	wget https://github.com/zyedidia/micro/releases/download/v2.0.10/micro-2.0.10-amd64.deb
 	dpkg -i micro-2.0.10-amd64.deb
-	rm micro-2.0.10-amd64.deb	
+	rm micro-2.0.10-amd64.deb
 
 	# Install go
 	wget https://go.dev/dl/go1.17.3.linux-amd64.tar.gz
@@ -60,7 +61,7 @@ function install_manual {
 function setup_keyboard {
 	# Swap ctrl+capslock
 	sed -i 's/XKBOPTIONS=""/XKBOPTIONS="ctrl:swapcaps"/' /etc/default/keyboard
-			
+
 }
 
 # uncomment from below:
