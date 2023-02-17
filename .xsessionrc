@@ -3,9 +3,6 @@
 # make dmenu pickup executables from path
 PATH="$HOME/scripts:$PATH"
 
-# touchpad settings
-xinput set-prop 15 345 0.7 # Accel speed
-
 # launch status bar
 $HOME/.config/polybar/launch.sh &
 

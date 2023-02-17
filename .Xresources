@@ -10,6 +10,9 @@ URxvt*scrollBar_right : false
 URxvt*transparent     : false
 URxvt*cursorBlink     : true
 
+! lines buffer
+URxvt.saveLines: 20000
+
 ! Font
 URxvt*font            : xft:Inconsolata:size=12
 
