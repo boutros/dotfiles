@@ -1,5 +1,5 @@
-Xft.dpi: 212
-!Xft.dpi: 96
+!Xft.dpi: 212
+Xft.dpi: 96
 Xft.antialias: true
 Xft.hinting: true
 Xft.rgba: rgb
@@ -14,7 +14,7 @@ URxvt*cursorBlink     : true
 URxvt.saveLines: 20000
 
 ! Font
-URxvt*font            : xft:Inconsolata:size=12
+URxvt*font            : xft:Inconsolata:size=14
 
 ! light
 URxvt.foreground:   #424242

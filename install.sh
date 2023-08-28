@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-# The install script is tested on a fresh install of Debian 11.
+# The install script is tested on Xubunut 20.04 LTS
 
 # Goal: Running the script repeatedly should not mess up.
 
@@ -32,16 +32,14 @@ function install_apt {
 		tig \
 		curl \
 		dmenu \
-		fzf
+		fzf \
+		polybar \
+		brightnessctl \
+		micro
 
 }
 
 function install_manual {
-	# Install micro editor
-	wget https://github.com/zyedidia/micro/releases/download/v2.0.10/micro-2.0.10-amd64.deb
-	dpkg -i micro-2.0.10-amd64.deb
-	rm micro-2.0.10-amd64.deb
-
 	# Install go
 	wget https://go.dev/dl/go1.17.3.linux-amd64.tar.gz
 	rm -rf /usr/local/go && tar -C /usr/local -xzf go1.17.3.linux-amd64.tar.gz
@@ -53,7 +51,7 @@ function install_manual {
 	#rm vscode.deb
 
 	# Install sqlite3
-	wget https://github.com/nalgeon/sqlite/releases/download/3.37.0/sqlite3-ubuntu
+	wget https://github.com/nalgeon/sqlite/releases/download/3.40.0/sqlite3-ubuntu
 	chmod a+x sqlite3-ubuntu
 	mv sqlite3-ubuntu /usr/local/bin/sqlite
 }
